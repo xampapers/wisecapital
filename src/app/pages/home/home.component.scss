@@ -1,0 +1,168 @@
+.outer-div {
+  background-image: url('../../../assets/cover.jpeg'); /* Replace with the actual path to your image */
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  color: #fff; /* Set text color to white or a contrasting color */
+  height: 650px;
+  width: 100%;
+ 
+ 
+}
+// .header-content {
+//   position: relative;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   background-color:#0c4e6d; /* Add a semi-transparent blue background */
+//   opacity: 0.7;
+//   padding: 20px;
+// }
+
+
+.home-logo {
+ 
+  height: 225px;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 1;
+}
+.carousel img {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  border: solid 10px  #2887aa;
+}
+
+.carousel img.active {
+  transform: translateX(0%);
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%; /* Adjust the width as needed */
+  margin: 20px auto; /* Center the carousel */
+  transition: transform 0.5s ease-in-out;
+}
+.welcome-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color: #20a7d8;
+}
+
+.welcome-text {
+  
+  color: rgb(255, 255, 255);
+  
+  animation: fadeInUp 2s forwards;
+}
+.welcome-text-quote{
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+
+ 
+}
+.animation{
+  animation: fadeInUp 2s forwards;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  font-family:'Roboto';
+  background-color: #131417;  
+}
+
+.container-this{
+  color: #ffffff;
+  font-size: 2.0rem;
+  text-transform: uppercase;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 32px;
+}
+
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 10s infinite;
+}
+
+.first div {
+  background-color:#ffffff;
+  color: #2887aa;
+  
+}
+.second div {
+  background-color:#ffffff;
+  color: grey;
+}
+.third div {
+  background-color:#ffffff;
+  color: green;
+}
+.fourth div{
+  background-color: rgb(255, 255, 255);
+  color: red;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+.welcome-font{
+  color: #2887aa;
+}
+.carousel-background{
+  background-color: #49a2c2;
+}
+
+
+
+.text-carousel{
+  width: 90%;
+ 
+}
+
+
+// animaition for quaote

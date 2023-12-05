@@ -1,0 +1,86 @@
+<div class="container-fluid p-0">
+  <div class="row">
+     <div class="outer-div col-12">
+      <div class="header-content">
+        <div class="row">
+           <div class="col-12 text-center">
+              
+              <div class="text-center m-3">
+                 <img src="../../../assets/imageedit_5_8806426400.png" class="home-logo mt-3" alt="Wise Capital Logo">
+              </div>
+              <div>
+                <h3>
+                  Unlocking Capital Wisdom, Fueling Succcess
+                </h3>                
+               
+              </div>
+              
+              
+              <h1 class="welcome-text display-1 m-3 fw-bold" >wisecapital.lk</h1>
+              <div class="container-this text-center m-3">
+                
+                 <section class="animation">
+                    <div class="first"><div>Construction</div></div>
+                    <div class="second"><div>Loans</div></div>
+                    <div class="third"><div>Stationaries</div></div>
+                    <div class="fourth"><div>Vehicles</div></div>
+                 </section>
+              </div>
+           </div>
+        </div>
+      </div>
+     </div>
+  </div>
+</div>
+<div class="container">
+  <div class="text-center m-3">
+    <img src="../../../assets/LogoWiseCapitalDone.jpg" class="home-logo mt-3" alt="Wise Capital Logo">
+  </div>
+</div>
+<div class="container text-center mt-5">
+  <div>
+    <h1 class="fw-bold welcome-font">
+      Wellcome to Wisecapital Group of Companies
+    </h1>
+    
+  </div>
+  <div class="mt-4">
+    <p>
+      Wise Capital is Founded in 2018 under registration number PV00284699, our company is a versatile hub offering a range of services. From providing loans to shaping the construction landscape, dealing in vehicle transactions, and supplying stationery, we're more than just a business; we're a solution
+    </p>
+  </div>
+
+</div>
+<div>
+  
+
+<!-- carousel.component.html -->
+<div id="carouselExampleAutoplaying" class="carousel slide container" data-ride="carousel" (mouseenter)="stopAutoplay()" (mouseleave)="startAutoplay()">
+  <div class="carousel-inner">
+    <div *ngFor="let slide of slides; let i = index" class="carousel-item" [class.active]="i === currentIndex">
+      <div class="d-flex carousel-background">
+            <div style="width: 20%;">
+                  <img [src]="slide.picture"   alt="...">
+            </div>
+            <div class="m-3 text-carousel ms-d-none">
+              <div >
+                <h1 [textContent]="slide.title" class="text-light fw-bold">
+                  
+                </h1>
+                <p [textContent]="slide.description" class="text-light">Discover excellence in construction with our dedicated services, encompassing house construction, roof and ceiling installation, building renovation, and meticulous maintenance.</p>
+              </div>
+              
+            </div>
+    </div>
+  </div>
+   
+  </div>
+  <button class="carousel-control-prev" type="button" (click)="prevSlide()">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only"></span>
+  </button>
+  <button class="carousel-control-next" type="button" (click)="nextSlide()">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only"></span>
+  </button>
+</div>
