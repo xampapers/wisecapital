@@ -1,0 +1,22 @@
+#whatsapp-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    animation: whatsapp-chat-animation 1s infinite alternate; /* Alternate the scale animation indefinitely */
+}
+
+@keyframes whatsapp-chat-animation {
+    from {
+        transform: scale(1); /* Initial scale */
+    }
+    to {
+        transform: scale(1.2); /* Scaled up */
+    }
+}
+
+#whatsapp-chat img {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+}

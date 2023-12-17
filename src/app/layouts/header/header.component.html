@@ -1,31 +1,31 @@
 <nav class="navbar navbar-expand-lg  bg-white" >
   <div class="container">
-    <div class="logo-navbar">
+    
     <a class="navbar-brand" routerLink="/home">
-      <div class="logo-navbar">
-       
+      <div class="d-flex align-items-center">
+          <div class="logo-navbar"></div>
+          <div class="brand-name ms-3">Wisecapital.lk</div>
       </div>
     </a>
-  </div>
-    <button class="navbar-toggler" (click)="toggleDropdown()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon">
-        
-      </span>
+ 
+    <button class="navbar-toggler no-boader-button" (click)="toggleDropdown()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" style="color: #0c4e6d;" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
      
     </button>
     
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
-        <li class="nav-item">
-          <a class="nav-link brand-name" routerLink="/home">Wisecapital.lk</a>
-        </li>
-         
-      </ul>
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <div class="header-div-tab">
             <a class="nav-link" routerLink="/home" routerLinkActive="bold-text">Home</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="header-div-tab">
+            <a class="nav-link" routerLink="/about-us" routerLinkActive="bold-text">About Us</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -36,24 +36,18 @@
             <!-- Dropdown menu under "Services" -->
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <div class="header-div-tab">
+                <a class="dropdown-item hove-link" routerLink="/services/money-lending" routerLinkActive="bold-text">Loans</a>
+              </div>
+              <div class="header-div-tab">
+                <a class="dropdown-item hove-link" routerLink="/services/construction" routerLinkActive="bold-text">Construction</a>
+              </div>
+              <div class="header-div-tab">
+                <a class="dropdown-item hove-link" routerLink="/services/vehicles" routerLinkActive="bold-text">Vehicles</a>
+              </div>
+              <div class="header-div-tab">
                     <a class="dropdown-item hove-link" routerLink="/services/stationary" routerLinkActive="bold-text">Stationary</a>
               </div>
-              <div class="header-div-tab">
-                    <a class="dropdown-item hove-link" routerLink="/services/construction" routerLinkActive="bold-text">Construction</a>
-              </div>
-              <div class="header-div-tab">
-                    <a class="dropdown-item hove-link" routerLink="/services/money-lending" routerLinkActive="bold-text">Money Lending</a>
-              </div>
-              <div class="header-div-tab">
-                    <a class="dropdown-item hove-link" routerLink="/services/vehicles" routerLinkActive="bold-text">Vehicles</a>
-              </div>
             </div>
-          </div>
-          
-        </li>
-        <li class="nav-item">
-          <div class="header-div-tab">
-            <a class="nav-link" routerLink="/contact" routerLinkActive="bold-text">Contact Us</a>
           </div>
         </li>
         <li class="nav-item">
@@ -63,10 +57,9 @@
         </li>
         <li class="nav-item">
           <div class="header-div-tab">
-            <a class="nav-link" routerLink="/about-us" routerLinkActive="bold-text">About</a>
+            <a class="nav-link" routerLink="/contact" routerLinkActive="bold-text">Contact</a>
           </div>
         </li>
-        
       </ul>
       
     </div>
@@ -74,16 +67,20 @@
 </nav>
 <div class="container-fluid text-center div-mobile" *ngIf="isDropdownOpen">
   <div class="header-div-tab-mobile">
-    <a class="dropdown-item hove-link-mobile" routerLink="/home">Home</a>
+    <a class="dropdown-item-mobile hove-link-mobile" routerLink="/home">Home</a>
   </div>
   <div class="header-div-tab-mobile">
-      <a class="dropdown-item hove-link-mobile" routerLink="/services">Services</a>
+    <a class="dropdown-item-mobile hove-link-mobile" routerLink="/about-us">About Us</a>
   </div>
   <div class="header-div-tab-mobile">
-      <a class="dropdown-item hove-link-mobile" routerLink="/contact">Contact</a>
+      <a class="dropdown-item-mobile hove-link-mobile" routerLink="/services">Services</a>
   </div>
   <div class="header-div-tab-mobile">
-      <a class="dropdown-item hove-link-mobile" routerLink="/about-us">About Us</a>
+    <a class="dropdown-item-mobile hove-link-mobile" routerLink="/our-team">Our Team</a>
   </div>
+  <div class="header-div-tab-mobile">
+    <a class="dropdown-item-mobile hove-link-mobile" routerLink="/contact">Contact</a>
+  </div>
+ 
 </div>
 

@@ -11,10 +11,10 @@ export class HomeComponent implements OnInit, OnDestroy {
 
 
 
-  slides = [{picture:'assets/paper-logo.png',title:'Stationary',description:'Elevate your workplace efficiency with our comprehensive stationery solutions. We supply a diverse range of office essentials, from A4, A3, A5 sheets to laminating pouches'},
-              {picture:'assets/builing-logo.png',title:'Construction',description:'Discover excellence in construction with our dedicated services, encompassing house construction, roof and ceiling installation, building renovation, and meticulous maintenance.'},
-              {picture:'assets/money-logo.png',title:'Loan',description:'Embark on a secure financial journey with our exceptional loan service facility, where possibilities know no bounds. Experience unparalleled flexibility with no constraints on the minimum or maximum loan values. '},
-              {picture:'assets/vehicle-logo.png',title:'Vehicles',description:'Revolutionize your vehicle experience with us—an exclusive destination for buying and selling. Explore a vast array of vehicles tailored to your preferences. Sell your vehicle hassle-free with our seamless process, ensuring fair market value.'},
+  slides = [{picture:'assets/paper-logo.png',title:'Stationaries',description:'Elevate your workplace efficiency with our comprehensive stationery solutions. We supply a diverse range of office essentials, from A4, A3, A5 sheets to laminating pouches'},
+              {picture:'assets/builing-logo.png',title:'Constructions',description:'Discover excellence in construction with our dedicated services, encompassing house construction, roof and ceiling installation, building renovation, and meticulous maintenance.'},
+              {picture:'assets/money-logo.png',title:'Loans',description:'Embark on a secure financial journey with our exceptional loan service facility, where possibilities know no bounds. Experience unparalleled flexibility with no constraints on the minimum or maximum loan values. '},
+              {picture:'assets/vehicle-logo.png',title:'Vehicles',description:'Revolutionize your vehicle experience with us—an exclusive destination for buying and selling. Explore a vast array of vehicles tailored to your preferences. Sell your vehicle hassle-free seamless process, ensuring fair market value.'},
  
     // Add more image paths as needed
   ];

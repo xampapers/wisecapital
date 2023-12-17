@@ -14,15 +14,15 @@
 }
 .logo-navbar{
   background-position: center;
-  background-image: url('../../../assets/WiseCapital.png');
+  background-image: url('../../../assets/WiseCapital-small.png');
   background-size: cover;
-  height:100%;
-  width: 39px;
-  padding: 0;
+  height:55px;
+  width: 65px;
+  padding: auto;
 }
 .brand-name{
-  font-size: 2rem;
-  color:#20a7d8;
+  font-size: 1.5rem;
+  color: #0c4e6d;
   
  }
 .dropdown:hover .dropdown-menu {
@@ -43,8 +43,13 @@
 .hove-link{
   font-size: 1.2rem;
 }
+.header-div-tab{
+  
+}
+
 .header-div-tab :hover{
-  background-color: #20a7d8;
+  background-color: #0c4e6d;
+
   color: white;
 }
 .dropdown-content>a{
@@ -55,7 +60,7 @@ text-decoration: none;
 .hove-link-mobile{
   font-size: 1.3rem;
 }
-.header-div-tab-mobile :hover{
+.header-div-tab-mobile:hover{
   background-color: rgba(0, 174, 255, 0.233);
   
 }
@@ -70,5 +75,20 @@ text-decoration: none;
 }
 .bold-text {
   
-  color:  #20a7d8;
+  color: #0c4e6d ;
+}
+.no-boader-button{
+  border: none;
+}
+.no-border-button:focus {
+  outline: none; /* Remove the default focus outline */
+  box-shadow: none; /* Remove any box shadow on focus */
+  border: none;
+}
+.dropdown-item{
+  font-size: 0.99rem;
+}
+.dropdown-item-mobile{
+  text-decoration: none;
+  color: black;
 }

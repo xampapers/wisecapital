@@ -6,6 +6,7 @@ import { LayoutsRoutingModule } from './layouts-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
+import { WhatsappIconComponent } from './whatsapp-icon/whatsapp-icon.component';
 
 
 
@@ -14,6 +15,7 @@ import { LayoutComponent } from './layout/layout.component';
     HeaderComponent,
     FooterComponent,
     LayoutComponent,
+    WhatsappIconComponent,
    
   ],
   imports: [

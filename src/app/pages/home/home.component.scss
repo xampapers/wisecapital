@@ -1,27 +1,13 @@
 .outer-div {
-  background-image: url('../../../assets/cover.jpeg'); /* Replace with the actual path to your image */
+  background-image: url('../../../assets/christoph-theisinger-9PPYa3LK6II-unsplash.jpg'); /* Replace with the actual path to your image */
   background-size: cover; /* Ensure the background image covers the entire container */
   background-position: center; /* Center the background image */
   color: #fff; /* Set text color to white or a contrasting color */
-  height: 650px;
+  height: 630px;
   width: 100%;
  
  
 }
-// .header-content {
-//   position: relative;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   background-color:#0c4e6d; /* Add a semi-transparent blue background */
-//   opacity: 0.7;
-//   padding: 20px;
-// }
 
 
 .home-logo {
@@ -31,9 +17,9 @@
   z-index: 1;
 }
 .carousel img {
-  width: 100%;
+  width: 90%;
   transition: transform 0.5s ease-in-out;
-  border: solid 10px  #2887aa;
+  margin: 10px;
 }
 
 .carousel img.active {
@@ -67,6 +53,7 @@
 .welcome-text-quote{
   font-size: 5rem;
   color: rgb(255, 255, 255);
+  backdrop-filter: blur(2px)
 
  
 }
@@ -94,6 +81,7 @@ body {
 
 .container-this{
   color: #ffffff;
+  opacity: 0.6;
   font-size: 2.0rem;
   text-transform: uppercase;
   height: 50px;
@@ -116,39 +104,38 @@ body {
   display:inline-block;
 }
 
-.animation div:first-child {
-  animation: text-animation 10s infinite;
+.animation div:first-child
+{
+  animation: text-animation 15s infinite;
 }
 
 .first div {
-  background-color:#ffffff;
-  color: #2887aa;
+  
+  color: #ffffff;
   
 }
 .second div {
-  background-color:#ffffff;
-  color: grey;
+  
+  color: rgb(255, 255, 255);
 }
 .third div {
-  background-color:#ffffff;
-  color: green;
+ 
+  color: rgb(255, 255, 255);
+
 }
 .fourth div{
-  background-color: rgb(255, 255, 255);
-  color: red;
+
+  color: rgb(255, 255, 255);
 }
 
 @keyframes text-animation {
-  0% {margin-top: 0;}
-  10% {margin-top: 0;}
-  20% {margin-top: -5.62rem;}
-  30% {margin-top: -5.62rem;}
-  40% {margin-top: -11.24rem;}
-  60% {margin-top: -11.24rem;}
-  70% {margin-top: -5.62rem;}
-  80% {margin-top: -5.62rem;}
-  90% {margin-top: 0;}
-  100% {margin-top: 0;}
+  0%,10% { margin-top: 0; }
+  18%,28% { margin-top: -5.62rem; }
+  34%,44% { margin-top: -11.24rem; }
+  50%,60% { margin-top: -16.86rem; }
+  66%,76% { margin-top: -11.24rem; }
+  82%,92% { margin-top: -5.62rem; }
+  100% { margin-top: 0; }
 }
 .welcome-font{
   color: #2887aa;
@@ -166,3 +153,61 @@ body {
 
 
 // animaition for quaote
+
+
+@keyframes lights {
+  0% {
+    color: hsl(0, 0%, 100%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(0, 0%, 100%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(0, 0%, 100%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(0, 0%, 100%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(0, 0%, 100%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
+
+
+.welcome-text {
+  margin: auto;
+
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
+}
