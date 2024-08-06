@@ -7,7 +7,7 @@
     </div>
   </header>
 
-  <div  class="container">
+  <div  class="container mt-3">
     <div id="carouselExampleAutoplaying" class="carousel slide container" data-ride="carousel" (mouseenter)="stopAutoplay()" (mouseleave)="startAutoplay()">
         <div class="carousel-inner">
           <div *ngFor="let slide of currentProject?.slides; let i = index" class="carousel-item" [class.active]="i === currentIndex">
@@ -31,7 +31,7 @@
       </div>
 
    
-        <div class="row gy-4 mt-4 ms-3">
+        <div class="row gy-4 mt-1 ms-3">
 
             <div class="col-lg-12">
               <div>
@@ -53,6 +53,8 @@
                   <li><strong>Location </strong> <span>:{{currentProject.location}}</span></li>
                   <li><strong>Project Cost </strong> <span>:{{currentProject.cost}}</span></li>
                   <li><strong>Duration </strong> <span>:{{currentProject.duration}}</span></li>
+                  <li *ngIf="currentProject.estimatedCost"><strong>Estimated Project Cost </strong> <span>:{{currentProject.estimatedCost}}</span></li>
+                  <li *ngIf="currentProject.estimatedDuration"><strong>Estimated Duration </strong> <span>:{{currentProject.estimatedDuration}}</span></li>
                 
 
 
